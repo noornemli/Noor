@@ -1,0 +1,111 @@
+/* ==========================================================================
+   VARIABLES.CSS
+   Design tokens for the whole site. Change values here to re-theme
+   everything at once — no other file should hard-code a color, font,
+   spacing value, or radius.
+   ========================================================================== */
+
+:root {
+  /* ---- Brand palette (as specified in the design brief) ---- */
+  --color-primary: #111827;      /* deep navy — headings, dark surfaces */
+  --color-bg: #F8FAFC;           /* page background (light mode) */
+  --color-card: #FFFFFF;         /* card / surface background */
+  --color-accent: #14B8A6;       /* teal — highlights, links, icons */
+  --color-text: #1E293B;         /* body text */
+  --color-text-muted: #56637A;   /* secondary text, captions */
+  --color-border: #E2E8F0;       /* hairline borders / dividers */
+
+  /* Accent used for BUTTON backgrounds needs dark text, not white, to meet
+     WCAG AA contrast (white-on-#14B8A6 is only ~2.5:1). Dark navy text on
+     the teal background measures ~7.2:1 — comfortably AA/AAA compliant
+     while keeping the exact accent color requested in the brief. */
+  --color-on-accent: #0B1220;
+
+  --color-success: #16A34A;
+  --color-danger: #DC2626;
+
+  /* ---- Dark mode overrides (applied via [data-theme="dark"] on <html>) --- */
+  --color-bg-dark: #0B1120;
+  --color-card-dark: #121A2B;
+  --color-text-dark: #E5E9F0;
+  --color-text-muted-dark: #94A3B8;
+  --color-border-dark: #1F2937;
+
+  /* ---- Typography ---- */
+  /* Single family, per brief: Inter, with a full system-font fallback stack
+     so the site still renders correctly and instantly if the web font
+     fails or is blocked. */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                 Roboto, Helvetica, Arial, sans-serif;
+
+  --fs-xs: 0.8125rem;   /* 13px */
+  --fs-sm: 0.9375rem;   /* 15px */
+  --fs-base: 1rem;      /* 16px */
+  --fs-md: 1.125rem;    /* 18px */
+  --fs-lg: 1.375rem;    /* 22px */
+  --fs-xl: 1.75rem;     /* 28px */
+  --fs-2xl: 2.25rem;    /* 36px */
+  --fs-3xl: 3rem;       /* 48px */
+  --fs-4xl: 3.75rem;    /* 60px */
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --lh-tight: 1.2;
+  --lh-normal: 1.6;
+  --lh-relaxed: 1.75;
+
+  /* ---- Spacing scale (rem-based, 4px grid) ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-8: 3rem;
+  --space-10: 4rem;
+  --space-12: 6rem;
+  --space-16: 8rem;
+
+  /* ---- Layout ---- */
+  --container-max: 1180px;
+  --container-narrow: 760px;
+  --header-height: 72px;
+
+  /* ---- Radius & elevation ---- */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-full: 999px;
+
+  --shadow-sm: 0 1px 2px rgba(17, 24, 39, 0.06), 0 1px 1px rgba(17, 24, 39, 0.04);
+  --shadow-md: 0 8px 24px rgba(17, 24, 39, 0.08), 0 2px 6px rgba(17, 24, 39, 0.04);
+  --shadow-lg: 0 24px 48px rgba(17, 24, 39, 0.12), 0 8px 16px rgba(17, 24, 39, 0.06);
+  --shadow-focus: 0 0 0 3px rgba(20, 184, 166, 0.45);
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-base: 280ms;
+  --duration-slow: 560ms;
+
+  --z-header: 100;
+  --z-modal: 1000;
+  --z-toast: 1100;
+}
+
+/* Dark theme: swap surface + text tokens, keep accent + spacing identical */
+[data-theme='dark'] {
+  --color-bg: var(--color-bg-dark);
+  --color-card: var(--color-card-dark);
+  --color-text: var(--color-text-dark);
+  --color-text-muted: var(--color-text-muted-dark);
+  --color-border: var(--color-border-dark);
+  --color-on-accent: #06110F;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 24px 48px rgba(0, 0, 0, 0.55);
+}

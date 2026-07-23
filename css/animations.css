@@ -1,0 +1,66 @@
+/* ==========================================================================
+   ANIMATIONS.CSS
+   Keyframes + scroll-reveal utility classes. All animations are subtle by
+   design (per brief: "elegant only, no distracting animations") and are
+   fully disabled under prefers-reduced-motion via main.css's global rule.
+   ========================================================================== */
+
+/* ---- Scroll reveal ----
+   Elements start slightly translated + transparent; main.js's
+   IntersectionObserver adds .is-visible when they enter the viewport. */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity var(--duration-slow) var(--ease-out),
+              transform var(--duration-slow) var(--ease-out);
+}
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Stagger children of a revealed group using a CSS counter-esque delay set inline via JS (--reveal-delay) */
+[data-reveal] { transition-delay: var(--reveal-delay, 0ms); }
+
+@keyframes caret-blink {
+  0%, 45% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@keyframes scroll-dot {
+  0%   { transform: translate(-50%, 0);   opacity: 1; }
+  70%  { opacity: 0.4; }
+  100% { transform: translate(-50%, 14px); opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes modal-in {
+  from { opacity: 0; transform: translateY(16px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Toast used for "email copied" confirmation */
+.toast {
+  position: fixed;
+  bottom: var(--space-6);
+  left: 50%;
+  transform: translateX(-50%) translateY(12px);
+  background: var(--color-primary);
+  color: #fff;
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-full);
+  font-size: var(--fs-sm);
+  box-shadow: var(--shadow-lg);
+  z-index: var(--z-toast);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--duration-base) var(--ease-out),
+              transform var(--duration-base) var(--ease-out);
+}
+.toast.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}

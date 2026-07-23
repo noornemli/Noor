@@ -1,0 +1,50 @@
+/* ==========================================================================
+   RESPONSIVE.CSS
+   Global breakpoint adjustments that aren't already co-located with their
+   component in main.css (spacing scale-down, ultra-wide cap, print).
+   Component-specific responsive rules (nav, hero, grids) live next to the
+   component in main.css so they're easy to find and edit together.
+   ========================================================================== */
+
+/* Ultra-wide monitors: cap line-length growth so the layout doesn't stretch */
+@media (min-width: 1600px) {
+  :root { --container-max: 1320px; }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  :root { --space-16: 5rem; --space-12: 4rem; }
+  .hero__inner { gap: var(--space-8); }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+  :root {
+    --space-16: 3.5rem;
+    --space-10: 2.5rem;
+    --fs-4xl: 2.5rem;
+    --fs-3xl: 2rem;
+    --fs-2xl: 1.75rem;
+  }
+  .container { padding-inline: var(--space-4); }
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__actions .btn { width: 100%; }
+  .resume-panel { padding: var(--space-5); }
+  .recruiter-fab span { display: none; } /* icon-only on very small screens */
+  .recruiter-fab { padding: var(--space-3); }
+}
+
+/* Respect safe-area insets on notched devices */
+@supports (padding: max(0px)) {
+  .site-header { padding-left: max(var(--space-6), env(safe-area-inset-left)); }
+  .back-to-top { bottom: max(var(--space-6), env(safe-area-inset-bottom)); }
+  .recruiter-fab { bottom: max(var(--space-6), env(safe-area-inset-bottom)); }
+}
+
+/* Print styles: resume-friendly, strips chrome */
+@media print {
+  .site-header, .back-to-top, .recruiter-fab, .modal-overlay,
+  .scroll-indicator, .theme-toggle, .menu-toggle { display: none !important; }
+  body { background: #fff; color: #000; }
+  section { padding-block: var(--space-6); }
+}

@@ -1,0 +1,6 @@
+# Domain: noornemli.com — update below if you register a different one.
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+Sitemap: https://noornemli.com/sitemap.xml

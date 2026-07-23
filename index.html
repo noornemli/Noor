@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+       SEO — primary metadata
+       Replace the placeholder URL(s) below with your real domain
+       once the site is deployed.
+       ============================================================ -->
+  <title>Noor Nemli — Commerce, Marketing & Customer Experience</title>
+  <meta name="description" content="Noor Nemli is a Commerce & Marketing student at Université Moulay Ismaïl (Meknès) seeking a first role in Customer Experience, Marketing, or Business Development. View projects, skills, and CV." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://noornemli.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Noor Nemli — Commerce, Marketing & Customer Experience" />
+  <meta property="og:description" content="Commerce & Marketing student seeking a first role in Customer Experience, Marketing, or Business Development. Projects, skills, and CV inside." />
+  <meta property="og:url" content="https://noornemli.com/" />
+  <meta property="og:image" content="assets/images/og-cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Noor Nemli — Commerce, Marketing & Customer Experience" />
+  <meta name="twitter:description" content="Commerce & Marketing student seeking a first role in Customer Experience, Marketing, or Business Development." />
+  <meta name="twitter:image" content="assets/images/og-cover.jpg" />
+
+  <!-- Favicon (replace assets/icons/favicon.svg with your own mark) -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" /> <!-- Add a 180x180 PNG here -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#111827" />
+
+  <!-- ============================================================
+       PERFORMANCE — font loading
+       Preconnect + preload the one web font used site-wide (Inter).
+       A full system-font fallback stack is defined in variables.css
+       so text still renders instantly and correctly if this fails.
+       ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- ============================================================
+       SECURITY
+       - This meta CSP is a baseline. Meta-tag CSP cannot set every
+         directive (e.g. frame-ancestors, report-uri) — for full
+         protection, send an equivalent Content-Security-Policy HTTP
+         header from your actual hosting/server config.
+       - No inline <script> or <style> is used anywhere on this site,
+         which is what makes a strict CSP like this possible.
+       ============================================================ -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; frame-src 'self'; base-uri 'self'; form-action 'self' mailto:;" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <!-- Theme must load un-deferred, this early, so dark/light mode is
+       applied before first paint (no flash of the wrong theme). -->
+  <script src="js/theme.js"></script>
+
+  <!-- ============================================================
+       SEO — structured data (Schema.org Person)
+       Fill in sameAs with your real LinkedIn/GitHub URLs.
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Noor Nemli",
+    "jobTitle": "Commerce & Marketing Student",
+    "description": "Commerce & Marketing student seeking a first professional role in Customer Experience, Marketing, or Business Development.",
+    "url": "https://noornemli.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Meknès",
+      "addressCountry": "MA"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Université Moulay Ismaïl"
+    },
+    "knowsLanguage": ["ar", "en", "fr"],
+    "sameAs": [
+      "https://www.linkedin.com/in/nour-nemli",
+      "https://github.com/Polobyhhh"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip link: first focusable element, only visible on focus -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================================================================
+       HEADER / NAVIGATION
+       ================================================================ -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo">Noor<span>.</span>Nemli</a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#activities">Activities</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================================================================
+         HOME / HERO
+         ================================================================ -->
+    <section id="home" class="hero" aria-label="Introduction">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div>
+          <span class="hero__eyebrow"><span class="dot" aria-hidden="true"></span> Open to first full-time opportunities · Meknès, Morocco</span>
+
+          <h1 class="hero__title">
+            Hi, I'm <span class="accent">Noor Nemli</span>.
+          </h1>
+
+          <p class="hero__role">
+            <span data-typing-target='["Customer Experience", "Marketing", "Business Development"]'>Customer Experience</span>
+          </p>
+
+          <p class="hero__summary">
+            A Commerce &amp; Marketing student from Meknès who learns fast, communicates clearly in three languages, and would rather show you a finished project than tell you about one.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn-primary" href="assets/resume/Noor_Nemli_CV_General.pdf" download>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"/></svg>
+              Download CV
+            </a>
+            <a class="btn btn-secondary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero__portrait">
+          <img src="assets/images/profile.jpg" alt="Portrait of Noor Nemli" />
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span class="wheel" aria-hidden="true"></span>
+        Scroll
+      </a>
+    </section>
+
+    <!-- ================================================================
+         ABOUT
+         ================================================================ -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-eyebrow">About</span>
+          <h2 class="section-title" id="about-title">Who I am and what I'm looking for</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__bio" data-reveal data-reveal-group="about">
+            <p>
+              I'm a Commerce &amp; Marketing student at Université Moulay Ismaïl in Meknès, currently preparing to
+              enter the job market. My coursework spans consumer behaviour, relationship marketing &amp; CRM,
+              digital marketing, and entrepreneurship — and I like turning that theory into something concrete,
+              whether that's an interactive study tool or a full business model canvas.
+            </p>
+            <p>
+              I'm looking for a first full-time role — ideally in Customer Experience, Marketing, Business
+              Development, or Administration — where I can put structured training to immediate use and build
+              real professional habits from day one. I'm equally comfortable in French (strong written, developing
+              spoken fluency) and English (fluent, spoken and written), and I bring the same discipline from five
+              years on a basketball court to how I approach deadlines and teamwork.
+            </p>
+            <p>
+              <!-- Replace/extend this paragraph as your story develops -->
+              What I bring without years of experience: curiosity, follow-through, and a genuine comfort with
+              digital and AI tools that most first-time candidates haven't yet developed.
+            </p>
+          </div>
+
+          <div class="value-list" data-reveal data-reveal-group="about">
+            <div class="value-card">
+              <h3>Customer-first mindset</h3>
+              <p>I default to understanding the person on the other side of the conversation before proposing a solution.</p>
+            </div>
+            <div class="value-card">
+              <h3>Fast, structured learner</h3>
+              <p>I pick up new tools and processes quickly, and I document what I learn so it compounds.</p>
+            </div>
+            <div class="value-card">
+              <h3>Bilingual communicator</h3>
+              <p>Fluent in English (oral &amp; written); strong written French with spoken French actively improving.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-row" data-reveal>
+          <div class="stat-card">
+            <div class="num"><span data-counter data-target="3">0</span></div>
+            <div class="label">Languages spoken</div>
+          </div>
+          <div class="stat-card">
+            <div class="num"><span data-counter data-target="7">0</span></div>
+            <div class="label">Projects showcased</div>
+          </div>
+          <div class="stat-card">
+            <div class="num"><span data-counter data-target="2">0</span></div>
+            <div class="label">Active communities</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         PROJECTS
+         ================================================================ -->
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-eyebrow">Projects</span>
+          <h2 class="section-title" id="projects-title">Things I've actually built</h2>
+          <p class="section-lede">Real coursework and personal projects — no filler, no invented internships.</p>
+        </div>
+
+        <div class="skills-filter" data-filter-group="#projects-grid" role="group" aria-label="Filter projects by category">
+          <button class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="Marketing" aria-pressed="false">Marketing</button>
+          <button class="chip" data-filter="Sales" aria-pressed="false">Sales</button>
+          <button class="chip" data-filter="Business" aria-pressed="false">Business</button>
+          <button class="chip" data-filter="Web/Tech" aria-pressed="false">Web / Tech</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- Reserved: the Interactive Consumer Behaviour Study Tool project is being
+               reorganized — add it back here once it's ready. -->
+
+          <article class="project-card" data-category="Marketing" data-reveal data-reveal-group="projects">
+            <div class="project-card__media gallery count-2">
+              <img src="assets/images/projects/luxury-marketing-title.jpg" alt="Title slide of the Marketing de Luxe presentation" />
+              <img src="assets/images/projects/luxury-marketing-goals.jpg" alt="Presentation goals slide: understanding luxury, exclusivity and rarity mechanisms" />
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Marketing · Marketing de base (S4)</span>
+              <h3 class="project-card__title">Marketing de Luxe</h3>
+              <p class="project-card__desc">
+                A team presentation on luxury brand marketing. I introduced the topic — defining what luxury
+                actually means and what gives it value — before the team covered exclusivity and rarity
+                mechanisms in the sector.
+              </p>
+              <ul class="tag-list">
+                <li>Canva</li><li>Team project</li><li>Brand positioning</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://canva.link/34qt8pxzpgg725o" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg> View full presentation
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Marketing" data-reveal data-reveal-group="projects">
+            <div class="project-card__media gallery count-3">
+              <img src="assets/images/projects/nike-you-cant-stop-us.jpg" alt="Nike You Can't Stop Us campaign slide" />
+              <img src="assets/images/projects/nike-just-do-it.jpg" alt="History of the Just Do It slogan slide" />
+              <img src="assets/images/projects/nike-message.jpg" alt="Nike brand message slide: empowerment, inclusion, dépassement" />
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Marketing · Marketing opérationnel (S5)</span>
+              <h3 class="project-card__title">La Communication dans les Techniques de Vente — Nike Case Study</h3>
+              <p class="project-card__desc">
+                A 6-person team case study on Nike's brand communication. I presented the "You Can't Stop Us"
+                campaign, the consistency of Nike's overall communication, and the controversies and limits
+                of its messaging.
+              </p>
+              <ul class="tag-list">
+                <li>Canva</li><li>Team of 6</li><li>Brand communication</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://canva.link/n8dazugyiyvr6ou" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg> View full presentation
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Sales" data-reveal data-reveal-group="projects">
+            <div class="project-card__media">
+              <img src="assets/images/projects/sales-engineering-title.jpg" alt="Title slide of L'Ingénierie de la Vente presentation" />
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Sales · Techniques de vente (S6)</span>
+              <h3 class="project-card__title">L'Ingénierie de la Vente</h3>
+              <p class="project-card__desc">
+                My first individual project, done solo end-to-end: a breakdown of the three pillars that condition
+                commercial success — Prospection, Préparation, and Prise de Contact — applied to an e-commerce
+                case study selling handmade products online.
+              </p>
+              <ul class="tag-list">
+                <li>Individual project</li><li>Sales funnel logic</li><li>Client profiling</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://canva.link/0s3cw3nte054vrl" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg> View full presentation
+                </a>
+                <a href="assets/documents/Sales_Engineering_Blueprint.pdf" download>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"/></svg> Download PDF
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Sales" data-reveal data-reveal-group="projects">
+            <div class="project-card__media">
+              <img src="assets/images/projects/closing-title.jpg" alt="Title slide of Conclusion de vente, prise de congé et suivi presentation" />
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Sales · Techniques de vente (S6)</span>
+              <h3 class="project-card__title">Conclusion de Vente, Prise de Congé et Suivi</h3>
+              <p class="project-card__desc">
+                A team project (Closing Crew) covering how a sale actually ends: closing the deal, taking leave of
+                the client, and following up afterward. My part was <strong>la prise de congé</strong> — how to
+                end the interaction on the right note.
+              </p>
+              <ul class="tag-list">
+                <li>Canva</li><li>Team project</li><li>Client follow-up</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://canva.link/wutk6s4rlf7bker" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg> View full presentation
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Business" data-reveal data-reveal-group="projects">
+            <div class="project-card__media">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Business · Entrepreneurship</span>
+              <h3 class="project-card__title">Business Model Canvas — Artisan Marketplace Concept</h3>
+              <p class="project-card__desc">
+                An entrepreneurship project applying the Business Model Canvas to a concept for a digital platform
+                connecting Moroccan pottery artisans directly with buyers.
+              </p>
+              <ul class="tag-list">
+                <li>Business Model Canvas</li><li>Market research</li><li>Value proposition design</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"/></svg> Download (placeholder)</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Marketing" data-reveal data-reveal-group="projects">
+            <div class="project-card__media">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12" y="8" width="3" height="10"/><rect x="17" y="5" width="3" height="13"/></svg>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Marketing · Case Analysis</span>
+              <h3 class="project-card__title">Digital Marketing Case Simulations</h3>
+              <p class="project-card__desc">
+                Two exam case simulations for fictional Moroccan brands, practicing CPA, ROI, and budget
+                reallocation decisions anchored in the case data rather than generic theory.
+              </p>
+              <ul class="tag-list">
+                <li>CPA / ROI</li><li>Budget modeling</li><li>Case analysis</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"/></svg> Download (placeholder)</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="Web/Tech" data-reveal data-reveal-group="projects">
+            <div class="project-card__media">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16"/></svg>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__tag">Web / Tech · This Site</span>
+              <h3 class="project-card__title">This Portfolio Website</h3>
+              <p class="project-card__desc">
+                A fast, accessible, single site built to represent my profile across Customer Experience,
+                Marketing, Retail, and Administration applications — no page builder, hand-written HTML/CSS/JS.
+              </p>
+              <ul class="tag-list">
+                <li>HTML/CSS/JS</li><li>Accessibility</li><li>SEO fundamentals</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18c-4.51 2-5-2-7-2"/></svg> GitHub (placeholder)</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SKILLS
+         ================================================================ -->
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-eyebrow">Skills</span>
+          <h2 class="section-title" id="skills-title">What I can do</h2>
+        </div>
+
+        <div class="skills-filter" data-filter-group="#skills-grid" role="group" aria-label="Filter skills by category">
+          <button class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="Business" aria-pressed="false">Business</button>
+          <button class="chip" data-filter="Marketing" aria-pressed="false">Marketing</button>
+          <button class="chip" data-filter="Customer Service" aria-pressed="false">Customer Service</button>
+          <button class="chip" data-filter="Digital" aria-pressed="false">Digital</button>
+          <button class="chip" data-filter="AI" aria-pressed="false">AI</button>
+          <button class="chip" data-filter="Office" aria-pressed="false">Office</button>
+          <button class="chip" data-filter="Languages" aria-pressed="false">Languages</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+
+          <div class="skill-card" data-category="Business" data-reveal data-reveal-group="skills">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+            <h3>Business Modeling</h3>
+            <p>Business Model Canvas, value proposition design, market segmentation.</p>
+          </div>
+          <div class="skill-card" data-category="Business" data-reveal data-reveal-group="skills">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+            <h3>CRM &amp; Relationship Marketing</h3>
+            <p>Customer lifetime value, loyalty mechanics, and the shift from transactional to relational marketing.</p>
+          </div>
+
+          <div class="skill-card" data-category="Marketing" data-reveal data-reveal-group="skills">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12" y="8" width="3" height="10"/><rect x="17" y="5" width="3" height="13"/></svg></div>
+            <h3>Digital Marketing Fundamentals</h3>
+            <p>Campaign structure, CPA/ROI calculation, and budget reallocation logic.</p>
+          </div>
+          <div class="skill-card" data-category="Marketing" data-reveal data-reveal-group="skills">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M14 3v5h5"/></svg></div>
+            <h3>Case Analysis</h3>
+            <p>Turning case data into grounded recommendations instead of generic theory.</p>
+          </div>
+
+          <div class="skill-card" data-category="Customer Service" data-reveal data-reveal-group="skills">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <h3>Client Communication</h3>
+            <p>Clear, professional communication tuned to the person on the other side.</p>
+          </div>
+          <div class="skill-card" data-category="Customer Service" data-reveal data-reveal-group="skills">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11Z"/></svg></div>
+            <h3>Active Listening &amp; Problem-Solving</h3>
+            <p>Identifying the real need behind a request before proposing a fix.</p>
+          </div>
+
+          <div class="skill-card" data-category="Digital" data-reveal data-reveal-group="skills">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+            <h3>Canva &amp; Visual Design</h3>
+            <p>Building clean, on-brand visual assets and presentations.</p>
+          </div>
+          <div class="skill-card" data-category="Digital" data-reveal data-reveal-group="skills">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div>
+            <h3>Web Research</h3>
+            <p>Fast, structured research to inform decisions and recommendations.</p>
+          </div>
+
+          <div class="skill-card" data-category="AI" data-reveal data-reveal-group="skills">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a5 5 0 0 0-5 5v2a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5Z"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3>AI-Assisted Prompting</h3>
+            <p>Structuring prompts for ChatGPT and Claude to speed up research, writing, and problem-solving.</p>
+          </div>
+
+          <div class="skill-card" data-category="Office" data-reveal data-reveal-group="skills">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg></div>
+            <h3>Microsoft Office</h3>
+            <p>Word, Excel, and PowerPoint for documents, basic analysis, and presentations.</p>
+          </div>
+          <div class="skill-card" data-category="Office" data-reveal data-reveal-group="skills">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12A10 10 0 1 1 12 2a8 8 0 0 1 8 8h-8"/></svg></div>
+            <h3>Google Workspace</h3>
+            <p>Docs, Sheets, and Slides for day-to-day collaborative work.</p>
+          </div>
+
+          <div class="skill-card" data-category="Languages" data-reveal data-reveal-group="skills">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg></div>
+            <h3>Arabic</h3>
+            <p>Native language.</p>
+          </div>
+          <div class="skill-card" data-category="Languages" data-reveal data-reveal-group="skills">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg></div>
+            <h3>English</h3>
+            <p>Fluent — oral and written.</p>
+          </div>
+          <div class="skill-card" data-category="Languages" data-reveal data-reveal-group="skills">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg></div>
+            <h3>French</h3>
+            <p>Fluent written; intermediate oral, actively improving.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         EXPERIENCE
+         ================================================================ -->
+    <section id="experience" aria-labelledby="experience-title">
+      <div class="container two-col">
+        <div>
+          <div class="section-head" data-reveal>
+            <span class="section-eyebrow">Experience</span>
+            <h2 class="section-title" id="experience-title">Where I've put this into practice</h2>
+            <p class="section-lede">University projects, workshops, and extracurricular activities so far — my first professional role will anchor this timeline next.</p>
+          </div>
+        </div>
+
+        <ol class="timeline" data-reveal>
+          <li class="timeline-item">
+            <div class="timeline-item__period">Ongoing</div>
+            <h3 class="timeline-item__title">Active Member — English Club</h3>
+            <div class="timeline-item__org">Université Moulay Ismaïl</div>
+            <p class="timeline-item__desc">Regular practice of professional spoken English through debates, presentations, and role-play scenarios.</p>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-item__period">Ongoing</div>
+            <h3 class="timeline-item__title">Member — Basketball Club</h3>
+            <div class="timeline-item__org">University team</div>
+            <p class="timeline-item__desc">Team discipline, communication under pressure, and consistency — skills that carry directly into a professional environment.</p>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-item__period">Completed</div>
+            <h3 class="timeline-item__title">Photography Workshop</h3>
+            <div class="timeline-item__org">University workshop</div>
+            <p class="timeline-item__desc">Visual composition and attention to detail — useful groundwork for marketing and content-facing work.</p>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-item__period">Next</div>
+            <h3 class="timeline-item__title"><!-- Replace once you land your first role --> Your first professional role</h3>
+            <div class="timeline-item__org">Placeholder — update once confirmed</div>
+            <p class="timeline-item__desc">This is where your first internship or job will appear.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         EDUCATION
+         ================================================================ -->
+    <section id="education" aria-labelledby="education-title">
+      <div class="container two-col">
+        <div>
+          <div class="section-head" data-reveal>
+            <span class="section-eyebrow">Education</span>
+            <h2 class="section-title" id="education-title">Academic background</h2>
+          </div>
+        </div>
+
+        <ol class="timeline" data-reveal>
+          <li class="timeline-item">
+            <div class="timeline-item__period">In progress</div>
+            <h3 class="timeline-item__title">Licence en Commerce et Marketing</h3>
+            <div class="timeline-item__org">Université Moulay Ismaïl, Meknès</div>
+            <p class="timeline-item__desc">
+              Relevant coursework: Digital Marketing, Consumer Behaviour, Relationship Marketing &amp; CRM,
+              Sales Techniques, Entrepreneurship.
+            </p>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-item__period">Placeholder</div>
+            <h3 class="timeline-item__title"><!-- Add real academic achievements here (honors, notable grades, competitions) --> Academic achievements</h3>
+            <div class="timeline-item__org">Add as they're confirmed</div>
+            <p class="timeline-item__desc">Reserved for honors, notable results, or competitions once confirmed.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         ACTIVITIES
+         ================================================================ -->
+    <section id="activities" aria-labelledby="activities-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-eyebrow">Activities</span>
+          <h2 class="section-title" id="activities-title">Outside the classroom</h2>
+        </div>
+
+        <div class="activities-grid" data-reveal>
+          <div class="activity-card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a13 13 0 0 1 0 18M12 3a13 13 0 0 0 0 18M3 12h18"/></svg></div>
+            <h3>Basketball</h3>
+            <p>University club member — teamwork, discipline, and performing under pressure.</p>
+          </div>
+          <div class="activity-card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2Z"/><circle cx="12" cy="13" r="4"/></svg></div>
+            <h3>Photography Workshop</h3>
+            <p>University workshop focused on visual composition and framing.</p>
+          </div>
+          <div class="activity-card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3>Team &amp; Group Coursework</h3>
+            <p>Collaborative projects alongside classmates across Commerce &amp; Marketing coursework.</p>
+          </div>
+          <div class="activity-card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z"/></svg></div>
+            <h3>Team Coordination</h3>
+            <p>On group projects (Marketing de Luxe; Nike Case Study), took the initiative to organize meeting times around everyone's schedules and ran a poll so each teammate presented the section they felt most confident in.</p>
+          </div>
+          <div class="activity-card is-placeholder">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z"/></svg></div>
+            <h3>Volunteer Work</h3>
+            <p>Placeholder — add once a volunteer experience is confirmed.</p>
+          </div>
+        </div>
+
+        <h3 class="section-title" style="font-size: var(--fs-lg); margin-top: var(--space-12); margin-bottom: var(--space-6);" data-reveal>Toolbox</h3>
+        <div class="toolbox-grid" data-reveal>
+          <div class="tool-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg><span>MS Office</span></div>
+          <div class="tool-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8M8 8h8M8 16h5"/></svg><span>Excel</span></div>
+          <div class="tool-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m9 8 6 4-6 4Z"/></svg><span>PowerPoint</span></div>
+          <div class="tool-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M8 13h8M8 17h5"/></svg><span>Word</span></div>
+          <div class="tool-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="9" cy="9" r="2"/><path d="m21 15-4-4-9 9"/></svg><span>Canva</span></div>
+          <div class="tool-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a5 5 0 0 0-5 5v2a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5Z"/><path d="M8 21h8M12 17v4"/></svg><span>ChatGPT</span></div>
+          <div class="tool-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg><span>Claude</span></div>
+          <div class="tool-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18c-4.51 2-5-2-7-2m14 4v-3a3 3 0 0 0-1-2c3-.3 6-1.5 6-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1-.3-3.3 1.3a11.5 11.5 0 0 0-6 0C7 .1 6 .4 6 .4a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.6 6.8c0 4.5 3 5.7 6 6a3 3 0 0 0-1 2.3V19"/></svg><span>GitHub</span></div>
+          <div class="tool-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m9 9 3 3-3 3M14 15h3"/></svg><span>VS Code</span></div>
+          <div class="tool-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 12A10 10 0 1 1 12 2a8 8 0 0 1 8 8h-8"/></svg><span>Google Workspace</span></div>
+          <div class="tool-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Research</span></div>
+          <div class="tool-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v3m0 12v3m9-9h-3M6 12H3m14.5-6.5-2 2m-9 9-2 2m0-13 2 2m9 9 2 2"/></svg><span>AI Prompting</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         RESUME
+         ================================================================ -->
+    <section id="resume" aria-labelledby="resume-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-eyebrow">Resume</span>
+          <h2 class="section-title" id="resume-title">Download or preview my CV</h2>
+          <p class="section-lede">One general-purpose CV for now — role-specific versions will be added here as they're written.</p>
+        </div>
+
+        <div class="resume-panel" data-reveal>
+          <div class="resume-panel__controls">
+            <label for="resume-version" class="sr-only">Choose a CV version</label>
+            <!-- Only one real CV exists right now. To add a tailored version
+                 later: add another <option> here with its own value/label,
+                 and upload the matching PDF into assets/resume/. The dropdown
+                 and switching logic in js/main.js already support this. -->
+            <select id="resume-version" class="resume-select">
+              <option value="assets/resume/Noor_Nemli_CV_General.pdf">General Profile</option>
+            </select>
+            <a id="resume-download" class="btn btn-primary" href="assets/resume/Noor_Nemli_CV_General.pdf" download="Noor_Nemli_CV_General.pdf">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"/></svg>
+              Download this version
+            </a>
+          </div>
+          <div class="resume-viewer">
+            <iframe id="resume-frame" src="assets/resume/Noor_Nemli_CV_General.pdf" title="Resume preview"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         CONTACT
+         ================================================================ -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-eyebrow">Contact</span>
+          <h2 class="section-title" id="contact-title">Let's talk</h2>
+          <p class="section-lede">The fastest way to reach me is email — I usually reply within a day.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div data-reveal data-reveal-group="contact">
+            <div class="contact-card">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg></div>
+              <div>
+                <div class="label">Email</div>
+                <div class="value">nornemli212@gmail.com</div>
+              </div>
+              <button class="btn btn-sm btn-ghost copy-btn" data-copy-email="nornemli212@gmail.com" aria-label="Copy email address">Copy</button>
+            </div>
+            <div class="contact-card">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg></div>
+              <div>
+                <div class="label">Phone</div>
+                <div class="value">+212 6 44 91 17 45</div>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div>
+                <div class="label">Location</div>
+                <div class="value">Meknès, Morocco</div>
+              </div>
+            </div>
+
+            <div class="social-row">
+              <a href="https://www.linkedin.com/in/nour-nemli" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v1.5A5 5 0 0 1 16 8Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="https://github.com/Polobyhhh" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-4.5 2-5-2-7-2m14 4v-3a3 3 0 0 0-1-2.3c3-.4 6-1.6 6-6.4a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.3 1.3a11.5 11.5 0 0 0-6 0C8 .1 7 .4 7 .4a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 5.6 6.8c0 4.8 3 6 6 6.4a3 3 0 0 0-1 2.3V19"/></svg>
+              </a>
+              <a href="mailto:nornemli212@gmail.com" aria-label="Send an email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <form id="contact-form" data-reveal data-reveal-group="contact" data-mailto="nornemli212@gmail.com" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" name="name" autocomplete="name" required />
+              <span class="error-msg" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" autocomplete="email" required />
+              <span class="error-msg" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="5" required></textarea>
+              <span class="error-msg" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div class="form-status" role="status" aria-live="polite"></div>
+            <!-- This form validates client-side and opens a pre-filled mailto:
+                 draft — it does not yet send anything server-side. Connect a
+                 real form backend for production use (see main.js comments). -->
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================================
+       FOOTER
+       ================================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-copy">&copy; <span id="year">2026</span> Noor Nemli. All rights reserved.</div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="#home">Back to top</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <!-- ================================================================
+       RECRUITER MODE
+       ================================================================ -->
+  <button class="recruiter-fab" type="button" aria-haspopup="dialog" aria-controls="recruiter-modal">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+    <span>Recruiter? Start Here</span>
+  </button>
+
+  <div class="modal-overlay" id="recruiter-modal" role="dialog" aria-modal="true" aria-labelledby="recruiter-modal-title" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-header">
+        <h2 id="recruiter-modal-title">60-Second Recruiter Summary</h2>
+        <button class="modal-close" aria-label="Close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 6-12 12M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="modal-section">
+        <h3>Profile</h3>
+        <p>Commerce &amp; Marketing student (Université Moulay Ismaïl, Meknès) seeking a first full-time role in Customer Experience, Marketing, or Business Development. Fluent English, strong written French, native Arabic.</p>
+      </div>
+
+      <div class="modal-section">
+        <h3>Key Skills</h3>
+        <ul class="modal-skill-tags">
+          <li>CRM &amp; Relationship Marketing</li><li>Digital Marketing</li><li>Client Communication</li>
+          <li>Business Modeling</li><li>AI-Assisted Workflows</li><li>Bilingual (EN/FR)</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <h3>Top Projects</h3>
+        <div class="modal-project">
+          <strong>La Communication dans les Techniques de Vente — Nike Case Study</strong>
+          <p>6-person team case study; presented Nike's "You Can't Stop Us" campaign and brand communication analysis.</p>
+        </div>
+        <div class="modal-project">
+          <strong>L'Ingénierie de la Vente</strong>
+          <p>Solo project breaking down Prospection, Préparation, and Prise de Contact into an applied sales framework.</p>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <a class="btn btn-primary" href="assets/resume/Noor_Nemli_CV_General.pdf" download>Download CV</a>
+        <a class="btn btn-secondary" href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts: deferred, run in order once the DOM is parsed -->
+  <script src="js/navigation.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/counters.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

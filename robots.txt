@@ -1,6 +1,6 @@
-# Domain: noornemli.com — update below if you register a different one.
+# GitHub Pages project URL — keep this in sync with index.html and sitemap.xml.
 User-agent: *
 Allow: /
 Disallow: /404.html
 
-Sitemap: https://noornemli.com/sitemap.xml
+Sitemap: https://noornemli.github.io/Noor/sitemap.xml

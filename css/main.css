@@ -95,6 +95,11 @@ section { padding-block: var(--space-16); }
   color: var(--color-primary);
 }
 [data-theme='dark'] .section-title { color: var(--color-text); }
+.subsection-title {
+  font-size: var(--fs-lg);
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-6);
+}
 .section-lede {
   max-width: 640px;
   color: var(--color-text-muted);
@@ -729,6 +734,9 @@ section { padding-block: var(--space-16); }
 .contact-card .icon svg { width: 18px; height: 18px; }
 .contact-card .label { font-size: var(--fs-xs); color: var(--color-text-muted); }
 .contact-card .value { font-size: var(--fs-sm); font-weight: var(--fw-medium); color: var(--color-text); }
+.contact-card .value a { color: inherit; text-decoration: none; }
+.contact-card .value a:hover,
+.contact-card .value a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
 .contact-card .copy-btn { margin-left: auto; }
 
 .social-row { display: flex; gap: var(--space-3); margin-top: var(--space-5); }

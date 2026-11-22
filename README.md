@@ -42,45 +42,26 @@ portfolio/
 │   ├── icons/           Favicon + app icons
 │   ├── fonts/           (Empty — Inter is loaded from Google Fonts; only
 │   │                     use this folder if you switch to self-hosting it)
-│   └── resume/          CV PDFs (placeholders included — replace them)
+│   └── resume/          One real general-purpose CV PDF
 └── components/          Reserved for future use if you add a build step
 ```
 
 ## Current status (as of last update)
 
-**Already filled in:**
-- Real email (`nornemli212@gmail.com`), phone, LinkedIn, and GitHub links
-- Domain set to `noornemli.com` throughout (update again if you register a
-  different one)
-- Real profile photo in the hero
-- Real Open Graph / social preview image (`assets/images/og-cover.jpg`)
-- One real, general-purpose CV at `assets/resume/Noor_Nemli_CV_General.pdf`
-- 4 real projects with actual screenshots and live Canva links (Marketing de
-  Luxe; Nike Case Study; L'Ingénierie de la Vente; Conclusion de Vente),
-  alongside the Business Model Canvas, Digital Marketing Case Simulations,
-  and Portfolio Website projects
-- A real "Team Coordination" activity card
+**Ready for deployment after your final confirmations:**
+- Real email (`nornemli212@gmail.com`) and phone, both clickable (`mailto:` / `tel:`)
+- LinkedIn URL verified from the signed-in account menu: `https://www.linkedin.com/in/noornemli/`
+- Broken GitHub profile link removed from the social row and structured data
+- Site URL set to the GitHub Pages project URL `https://noornemli.github.io/Noor/`
+  in `index.html`, `robots.txt`, `sitemap.xml`, and `privacy.html`
+- Real profile photo and Open Graph image
+- One real CV at `assets/resume/Noor_Nemli_CV_General.pdf`
+- 4 project cards only: the projects explicitly approved for public visibility
+- Visible placeholder cards and dead `href="#"` links removed
 
-**Still placeholders — fill in when ready:**
-1. **Interactive Consumer Behaviour Study Tool project** — removed for now
-   while it's being reorganized; add it back to the Projects section
-   (`index.html`) once it's ready, following the same `<article
-   class="project-card">` pattern as the others.
-2. **Business Model Canvas project file** — the card is still there, but
-   there's no download link since the source file was lost; add one back if
-   you recreate it.
-3. **Project screenshots** for Digital Marketing Case Simulations and the
-   Portfolio Website card — still generic icons.
-4. **Nice-to-have / only if genuinely true**: academic achievements, first
-   professional experience, volunteer work — intentionally left as dashed
-   "placeholder" cards so they never read as a false claim. Fill in only
-   once true.
-
-Every editable spot in the code is marked with an HTML comment like:
-```html
-<!-- Replace profile image here -->
-```
-so you can find them quickly with your editor's search.
+**Still needs your input (do not invent):**
+1. Confirm WhatsApp phone number and Gmail access from your signed-in sessions.
+2. Add achievements, first professional role, or volunteer work once true.
 
 
 ## Adding a new project card
@@ -129,9 +110,6 @@ There is no build command to run first.
 
 ## A note on honesty
 
-Per the original brief, this site does not invent experience, projects, or
-certifications. Every placeholder is clearly marked as a placeholder in a
-code comment and, where visible on the page (like the Activities section's
-dashed "Leadership" and "Volunteer Work" cards), styled distinctly so it's
-obvious to a real visitor that it's a placeholder too — fill those in only
-once they're genuinely true.
+This site does not invent experience, projects, or certifications. Visible
+placeholder cards and dead links were removed in the Phase 1 cleanup. Add new
+roles, achievements, or project files only once they are genuinely true.

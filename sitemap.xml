@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Replace https://noornemli.com with your real deployed domain once live. -->
+<!-- GitHub Pages project URL — keep these values in sync with index.html. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://noornemli.com/</loc>
+    <loc>https://noornemli.github.io/Noor/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://noornemli.com/privacy.html</loc>
+    <loc>https://noornemli.github.io/Noor/privacy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>

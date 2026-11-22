@@ -4,21 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ============================================================
-       SEO — primary metadata
-       Replace the placeholder URL(s) below with your real domain
-       once the site is deployed.
-       ============================================================ -->
+  <!-- Site URL is the GitHub Pages project URL: https://noornemli.github.io/Noor/ .
+       It is set in index.html (canonical, og:url, structured data), robots.txt,
+       sitemap.xml, and privacy.html. Change all of them together if the URL changes. -->
   <title>Noor Nemli — Commerce, Marketing & Customer Experience</title>
   <meta name="description" content="Noor Nemli is a Commerce & Marketing student at Université Moulay Ismaïl (Meknès) seeking a first role in Customer Experience, Marketing, or Business Development. View projects, skills, and CV." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://noornemli.com/" />
+  <link rel="canonical" href="https://noornemli.github.io/Noor/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Noor Nemli — Commerce, Marketing & Customer Experience" />
   <meta property="og:description" content="Commerce & Marketing student seeking a first role in Customer Experience, Marketing, or Business Development. Projects, skills, and CV inside." />
-  <meta property="og:url" content="https://noornemli.com/" />
+  <meta property="og:url" content="https://noornemli.github.io/Noor/" />
   <meta property="og:image" content="assets/images/og-cover.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -32,7 +30,6 @@
 
   <!-- Favicon (replace assets/icons/favicon.svg with your own mark) -->
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
-  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" /> <!-- Add a 180x180 PNG here -->
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#111827" />
 
@@ -71,7 +68,8 @@
 
   <!-- ============================================================
        SEO — structured data (Schema.org Person)
-       Fill in sameAs with your real LinkedIn/GitHub URLs.
+       LinkedIn URL was verified from the signed-in account menu.
+       The GitHub profile URL was removed because it did not resolve (404).
        ============================================================ -->
   <script type="application/ld+json">
   {
@@ -80,7 +78,7 @@
     "name": "Noor Nemli",
     "jobTitle": "Commerce & Marketing Student",
     "description": "Commerce & Marketing student seeking a first professional role in Customer Experience, Marketing, or Business Development.",
-    "url": "https://noornemli.com/",
+    "url": "https://noornemli.github.io/Noor/",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Meknès",
@@ -92,8 +90,7 @@
     },
     "knowsLanguage": ["ar", "en", "fr"],
     "sameAs": [
-      "https://www.linkedin.com/in/nour-nemli",
-      "https://github.com/Polobyhhh"
+      "https://www.linkedin.com/in/noornemli/"
     ]
   }
   </script>
@@ -152,7 +149,7 @@
           </p>
 
           <p class="hero__summary">
-            A Commerce &amp; Marketing student from Meknès who learns fast, communicates clearly in three languages, and would rather show you a finished project than tell you about one.
+            A Commerce &amp; Marketing student from Meknès who learns fast, communicates across three languages, and would rather show you a finished project than tell you about one.
           </p>
 
           <div class="hero__actions">
@@ -197,12 +194,11 @@
             <p>
               I'm looking for a first full-time role — ideally in Customer Experience, Marketing, Business
               Development, or Administration — where I can put structured training to immediate use and build
-              real professional habits from day one. I'm equally comfortable in French (strong written, developing
-              spoken fluency) and English (fluent, spoken and written), and I bring the same discipline from five
-              years on a basketball court to how I approach deadlines and teamwork.
+              real professional habits from day one. I'm fluent in English (spoken and written) and strong in written
+              French, with spoken French actively improving. I bring the same discipline from five years on a
+              basketball court to how I approach deadlines and teamwork.
             </p>
             <p>
-              <!-- Replace/extend this paragraph as your story develops -->
               What I bring without years of experience: curiosity, follow-through, and a genuine comfort with
               digital and AI tools that most first-time candidates haven't yet developed.
             </p>
@@ -218,8 +214,8 @@
               <p>I pick up new tools and processes quickly, and I document what I learn so it compounds.</p>
             </div>
             <div class="value-card">
-              <h3>Bilingual communicator</h3>
-              <p>Fluent in English (oral &amp; written); strong written French with spoken French actively improving.</p>
+              <h3>Multilingual communicator</h3>
+              <p>Native Arabic, fluent English, and strong written French with spoken French actively improving.</p>
             </div>
           </div>
         </div>
@@ -256,14 +252,9 @@
           <button class="chip is-active" data-filter="all" aria-pressed="true">All</button>
           <button class="chip" data-filter="Marketing" aria-pressed="false">Marketing</button>
           <button class="chip" data-filter="Sales" aria-pressed="false">Sales</button>
-          <button class="chip" data-filter="Business" aria-pressed="false">Business</button>
-          <button class="chip" data-filter="Web/Tech" aria-pressed="false">Web / Tech</button>
         </div>
 
         <div class="projects-grid" id="projects-grid">
-
-          <!-- Reserved: the Interactive Consumer Behaviour Study Tool project is being
-               reorganized — add it back here once it's ready. -->
 
           <article class="project-card" data-category="Marketing" data-reveal data-reveal-group="projects">
             <div class="project-card__media gallery count-2">
@@ -359,66 +350,6 @@
                 <a href="https://canva.link/wutk6s4rlf7bker" target="_blank" rel="noopener noreferrer">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg> View full presentation
                 </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="Business" data-reveal data-reveal-group="projects">
-            <div class="project-card__media">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
-            </div>
-            <div class="project-card__body">
-              <span class="project-card__tag">Business · Entrepreneurship</span>
-              <h3 class="project-card__title">Business Model Canvas — Artisan Marketplace Concept</h3>
-              <p class="project-card__desc">
-                An entrepreneurship project applying the Business Model Canvas to a concept for a digital platform
-                connecting Moroccan pottery artisans directly with buyers.
-              </p>
-              <ul class="tag-list">
-                <li>Business Model Canvas</li><li>Market research</li><li>Value proposition design</li>
-              </ul>
-              <div class="project-card__links">
-                <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"/></svg> Download (placeholder)</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="Marketing" data-reveal data-reveal-group="projects">
-            <div class="project-card__media">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12" y="8" width="3" height="10"/><rect x="17" y="5" width="3" height="13"/></svg>
-            </div>
-            <div class="project-card__body">
-              <span class="project-card__tag">Marketing · Case Analysis</span>
-              <h3 class="project-card__title">Digital Marketing Case Simulations</h3>
-              <p class="project-card__desc">
-                Two exam case simulations for fictional Moroccan brands, practicing CPA, ROI, and budget
-                reallocation decisions anchored in the case data rather than generic theory.
-              </p>
-              <ul class="tag-list">
-                <li>CPA / ROI</li><li>Budget modeling</li><li>Case analysis</li>
-              </ul>
-              <div class="project-card__links">
-                <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"/></svg> Download (placeholder)</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="Web/Tech" data-reveal data-reveal-group="projects">
-            <div class="project-card__media">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16"/></svg>
-            </div>
-            <div class="project-card__body">
-              <span class="project-card__tag">Web / Tech · This Site</span>
-              <h3 class="project-card__title">This Portfolio Website</h3>
-              <p class="project-card__desc">
-                A fast, accessible, single site built to represent my profile across Customer Experience,
-                Marketing, Retail, and Administration applications — no page builder, hand-written HTML/CSS/JS.
-              </p>
-              <ul class="tag-list">
-                <li>HTML/CSS/JS</li><li>Accessibility</li><li>SEO fundamentals</li>
-              </ul>
-              <div class="project-card__links">
-                <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18c-4.51 2-5-2-7-2"/></svg> GitHub (placeholder)</a>
               </div>
             </div>
           </article>
@@ -563,12 +494,6 @@
             <div class="timeline-item__org">University workshop</div>
             <p class="timeline-item__desc">Visual composition and attention to detail — useful groundwork for marketing and content-facing work.</p>
           </li>
-          <li class="timeline-item">
-            <div class="timeline-item__period">Next</div>
-            <h3 class="timeline-item__title"><!-- Replace once you land your first role --> Your first professional role</h3>
-            <div class="timeline-item__org">Placeholder — update once confirmed</div>
-            <p class="timeline-item__desc">This is where your first internship or job will appear.</p>
-          </li>
         </ol>
       </div>
     </section>
@@ -594,12 +519,6 @@
               Relevant coursework: Digital Marketing, Consumer Behaviour, Relationship Marketing &amp; CRM,
               Sales Techniques, Entrepreneurship.
             </p>
-          </li>
-          <li class="timeline-item">
-            <div class="timeline-item__period">Placeholder</div>
-            <h3 class="timeline-item__title"><!-- Add real academic achievements here (honors, notable grades, competitions) --> Academic achievements</h3>
-            <div class="timeline-item__org">Add as they're confirmed</div>
-            <p class="timeline-item__desc">Reserved for honors, notable results, or competitions once confirmed.</p>
           </li>
         </ol>
       </div>
@@ -636,14 +555,9 @@
             <h3>Team Coordination</h3>
             <p>On group projects (Marketing de Luxe; Nike Case Study), took the initiative to organize meeting times around everyone's schedules and ran a poll so each teammate presented the section they felt most confident in.</p>
           </div>
-          <div class="activity-card is-placeholder">
-            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z"/></svg></div>
-            <h3>Volunteer Work</h3>
-            <p>Placeholder — add once a volunteer experience is confirmed.</p>
-          </div>
         </div>
 
-        <h3 class="section-title" style="font-size: var(--fs-lg); margin-top: var(--space-12); margin-bottom: var(--space-6);" data-reveal>Toolbox</h3>
+        <h3 class="section-title subsection-title" data-reveal>Toolbox</h3>
         <div class="toolbox-grid" data-reveal>
           <div class="tool-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg><span>MS Office</span></div>
           <div class="tool-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8M8 8h8M8 16h5"/></svg><span>Excel</span></div>
@@ -711,7 +625,7 @@
               <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg></div>
               <div>
                 <div class="label">Email</div>
-                <div class="value">nornemli212@gmail.com</div>
+                <div class="value"><a href="mailto:nornemli212@gmail.com">nornemli212@gmail.com</a></div>
               </div>
               <button class="btn btn-sm btn-ghost copy-btn" data-copy-email="nornemli212@gmail.com" aria-label="Copy email address">Copy</button>
             </div>
@@ -719,7 +633,7 @@
               <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg></div>
               <div>
                 <div class="label">Phone</div>
-                <div class="value">+212 6 44 91 17 45</div>
+                <div class="value"><a href="tel:+212644911745">+212 6 44 91 17 45</a></div>
               </div>
             </div>
             <div class="contact-card">
@@ -731,11 +645,8 @@
             </div>
 
             <div class="social-row">
-              <a href="https://www.linkedin.com/in/nour-nemli" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+              <a href="https://www.linkedin.com/in/noornemli/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v1.5A5 5 0 0 1 16 8Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              </a>
-              <a href="https://github.com/Polobyhhh" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-4.5 2-5-2-7-2m14 4v-3a3 3 0 0 0-1-2.3c3-.4 6-1.6 6-6.4a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.3 1.3a11.5 11.5 0 0 0-6 0C8 .1 7 .4 7 .4a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 5.6 6.8c0 4.8 3 6 6 6.4a3 3 0 0 0-1 2.3V19"/></svg>
               </a>
               <a href="mailto:nornemli212@gmail.com" aria-label="Send an email">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg>
@@ -797,7 +708,7 @@
     <span>Recruiter? Start Here</span>
   </button>
 
-  <div class="modal-overlay" id="recruiter-modal" role="dialog" aria-modal="true" aria-labelledby="recruiter-modal-title" aria-hidden="true">
+  <div class="modal-overlay" id="recruiter-modal" role="dialog" aria-modal="true" aria-labelledby="recruiter-modal-title" aria-hidden="true" inert>
     <div class="modal-panel">
       <div class="modal-header">
         <h2 id="recruiter-modal-title">60-Second Recruiter Summary</h2>
@@ -815,7 +726,7 @@
         <h3>Key Skills</h3>
         <ul class="modal-skill-tags">
           <li>CRM &amp; Relationship Marketing</li><li>Digital Marketing</li><li>Client Communication</li>
-          <li>Business Modeling</li><li>AI-Assisted Workflows</li><li>Bilingual (EN/FR)</li>
+          <li>Business Modeling</li><li>AI-Assisted Workflows</li><li>Multilingual (AR/EN/FR)</li>
         </ul>
       </div>
 

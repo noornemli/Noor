@@ -132,6 +132,7 @@
       lastFocused = document.activeElement;
       recruiterModal.classList.add('is-open');
       recruiterModal.setAttribute('aria-hidden', 'false');
+      recruiterModal.removeAttribute('inert');
       const focusable = getFocusable();
       if (focusable.length) focusable[0].focus();
       document.body.style.overflow = 'hidden';
@@ -140,6 +141,7 @@
     function closeModal() {
       recruiterModal.classList.remove('is-open');
       recruiterModal.setAttribute('aria-hidden', 'true');
+      recruiterModal.setAttribute('inert', '');
       document.body.style.overflow = '';
       if (lastFocused) lastFocused.focus();
     }
